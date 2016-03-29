@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="./jquery-1.7.2.min.js"></script>
+</head>
+
+<body>
+
+
+<a href="a.php">点击链接a.php</a>
+<hr/>
+
+<div>
+    <p>通过a.html页面访问b.php,然后b.php返回json数据后,如果status为1,则跳转到c.php</p>
+<form action="b.php" method="post">
+
+    <label>用户名</label><input type="text" name="username">
+         <label><input type="button" value="提交" class="btn"></label>
+</form>
+</div>
+
+
+
+<script>
+
+
+    $('.btn').on('click',function(){
+
+        var username = $('input[name=username]').val();
+        $.ajax({
+            type: "POST",
+            url: "b.php",
+            dataType: "json",
+            data: {"username":username},
+
+            success: function(data){
+                if(data.status==1){
+                   alert('发送成功');
+                    window.location.href='c.php';
+                }else{
+                  alert('发送失败');
+                }
+            }
+        });
+
+    });
+
+
+
+</script>
+
+</body>
+</html>

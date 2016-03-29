@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body div ul li a{
+            margin:0;
+            padding:0;
+
+        }
+        ul li{
+            /*list-style: none;*/
+
+        }
+
+        .radius img{
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            border-radius: 100px;
+        }
+
+
+    </style>
+    <script type="text/javascript" src="./jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./222.js"></script>
+</head>
+<body>
+
+<a href="http://www.scu.edu.cn" target="_blank" class="radius"><img src="222.png" ></a>
+
+
+
+<hr/>
+<p>跳转到百度<br><a href="http://www.baidu.com" title="baidu">baidu</a></p>
+
+
+
+<hr />
+<div>列表
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>2</li>
+</ul>
+</div>
+
+
+<hr/>
+<form  method="post" action="test.php">
+    用户名:
+    <input  type="text"  name="username" value="123456"/>
+    <br>
+    密&nbsp码:
+    <input  type="password"  name="pwd" value="123456"/>
+    <label></label>
+    <input type="submit"  value="提交" />
+</form>
+
+
+
+
+<hr/>
+<form action="test.php" method="post" >
+    <label>复选框:</label>
+    <label>1</label>
+    <input type="checkbox" value="1"  name="selects[]" />
+    <label>2</label>
+    <input type="checkbox" value="2"  name="selects[]" />
+    <label>3</label>
+    <input type="checkbox" value="3"  name="selects[]" />
+    <label></label>
+    <input type="submit"  value="提交" />
+</form>
+
+
+
+<hr/>
+<form action="test.php" method="post">
+    <label>性别:</label>
+    <label>男</label>
+    <input type="radio" value="1"  name="gender-man" />
+    <label>女</label>
+    <input type="radio" value="2"  name="gender-man" />
+    <label>不详</label>
+    <input type="radio" value="3"  name="gender-man" />
+    <label></label>
+    <input type="submit"  value="提交" />
+</form>
+
+
+
+<hr/>
+<form action="test.php" method="post" >
+    <label>下拉框:</label>
+    <select name="select">
+        <option value="1" selected="selected">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <label></label>
+    <input type="submit"  value="提交" />
+</form>
+
+
+<hr/>
+
+
+<div>
+    <p><label>检查手机号</label><input type="text" name="tel" /></p>
+    <p><label></label><input type="button" value="检查" id="check"/></p>
+</div>
+
+
+<hr/>
+<label>js实现显示和隐藏</label>
+<input type="button" id="showHide" value="显示/隐藏">
+<div id="sh">
+
+
+<form action="test.php" method="post" >
+    <label>输入框</label><input type="text" name="">
+    <label>选择框</label>
+    <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <input type="submit" value="提交">
+
+</form>
+</div>
+
+</body>
+</html>
